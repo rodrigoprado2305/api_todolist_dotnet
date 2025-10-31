@@ -14,6 +14,7 @@ c# Base language support for c#
 IntelliCode for c# Dev Kit
 
 ## Commands, scan
+
 dotnet --list-sdks
 findstr ms-dotnettools.csharp 
 
@@ -36,20 +37,18 @@ CREATE TABLE IF NOT EXISTS tasks (
 
 ## Run
 
-No diretório `src/Api`:
+No diretório `api_todolist_dotnet\src\Api\`:
 ```bash
 dotnet restore
 dotnet build
-dotnet run --project src/Api/Api.csproj --urls http://localhost:5035
+dotnet run
+dotnet run --urls http://localhost:5035
 ```
-A saída mostrará a porta (ex.: `http://localhost:5035` / `https://localhost:7201`).
 
-Para Release: 
-dotnet run -c Release --urls http://localhost:5035
-
-Para usar um profile do launchSettings.json:
-dotnet run --launch-profile "API Todo (.NET 9) – Debug Program.cs"
-
+```bash - Para usar um profile do launchSettings.json:
+dotnet run --project D:\github\Rod\.Net\api_todolist_dotnet\src\Api\Api.csproj --urls http://localhost:5035
+dotnet run --project D:\github\Rod\.Net\api_todolist_dotnet\src\Api\Api.csproj --launch-profile "Api"
+```
 
 # Swagger
 
