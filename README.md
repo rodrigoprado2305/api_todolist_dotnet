@@ -46,8 +46,8 @@ dotnet run --urls http://localhost:5035
 ```
 
 ```bash - Para usar um profile do launchSettings.json:
-dotnet run --project D:\github\Rod\.Net\api_todolist_dotnet\src\Api\Api.csproj --urls http://localhost:5035
-dotnet run --project D:\github\Rod\.Net\api_todolist_dotnet\src\Api\Api.csproj --launch-profile "Api"
+dotnet run --project D:\github\Rod\dotnet\api_todolist_dotnet\src\Api\Api.csproj --urls http://localhost:5035
+dotnet run --project D:\github\Rod\dotnet\api_todolist_dotnet\src\Api\Api.csproj --launch-profile "Api"
 ```
 
 # Swagger
